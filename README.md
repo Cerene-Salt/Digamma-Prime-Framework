@@ -1,16 +1,12 @@
 
-
-## ✅ Updated `README.md` for Digamma Prime Framework (with Lady Epe on PyPI)
-
-```markdown
 # 🌌 Digamma Prime Framework
 
 **Digamma Prime** is a symbolic audit system for model comparison, divergence analysis, and structural integrity monitoring. Built for data science, machine learning, and AI interpretability, it offers metrics that go beyond statistical tests — revealing how models behave, change, and destabilize.
 
-Now installable via PyPI as **Lady Epe**:
+Now installable via PyPI as **digamma-ep**:
 
-```bash
-pip install lady-epe
+```
+pip install digamma-ep
 ```
 
 ---
@@ -23,7 +19,7 @@ pip install lady-epe
 | δϝ     | Rate divergence       | Difference in change velocity        |
 | δ²ϝ    | Curvature divergence  | Difference in acceleration/instability |
 
-These metrics form the backbone of Lady Epe — a symbolic system for functional auditing and pedagogical modeling.
+These metrics form the backbone of Digamma Prime — a symbolic system for functional auditing and pedagogical modeling.
 
 ---
 
@@ -31,13 +27,13 @@ These metrics form the backbone of Lady Epe — a symbolic system for functional
 
 ### ✅ Recommended (PyPI)
 
-```bash
-pip install lady-epe
+```
+pip install digamma-ep
 ```
 
 ### 🛠️ Development (GitHub)
 
-```bash
+```
 git clone https://github.com/Cerene-Salt/Digamma-Prime-Framework.git
 cd Digamma-Prime-Framework
 pip install .
@@ -60,7 +56,7 @@ from epe_maria.temporal import second_order_divergence
 
 ## 📊 Benchmarking
 
-Compare Lady Epe’s symbolic metrics with traditional statistical tests:
+Compare Digamma Prime’s symbolic metrics with traditional statistical tests:
 
 ```python
 from epe_maria.benchmark import benchmark_epe_vs_ks
@@ -75,9 +71,7 @@ print(result)
 
 Full symbolic interpretation, pedagogical examples, and pipeline overview available in:
 
-```
 docs/epe_documentacao_simbolica.md
-```
 
 Includes:
 - Metric definitions and formulas
@@ -91,12 +85,12 @@ Includes:
 
 **Cerene Rúbio**  
 Symbolic systems architect | Model integrity researcher  
-Creator of Lady Epe and the Digamma Prime Framework
+Creator of Digamma Prime and the `digamma-ep` package
 
 ---
 
 ## 🏷️ PyPI Badge
 
-![PyPI version](https://img.shields.io/pypi/v/lady-epe)  
-[View on PyPI →](https://pypi.org/project/lady-epe)
+![PyPI version](https://img.shields.io/pypi/v/digamma-ep)  
+View on PyPI → https://pypi.org/project/digamma-ep
 ```
