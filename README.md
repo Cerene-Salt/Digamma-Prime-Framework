@@ -295,3 +295,50 @@ This course introduces the Digamma Prime Framework — a symbolic system for com
 - Midterm: symbolic audit of two ML models
 - Final project: full symbolic audit pipeline with documentation
 
+## 🧩 Symbolic Architecture (Piancé)
+
+Digamma Prime is powered by Piancé — a symbolic engine that defines modular audit layers and semantic domains for function integrity.
+
+Each metric in Digamma Prime corresponds to a symbolic layer in Piancé:
+
+| Piancé Layer | Digamma Metric | Meaning |
+|--------------|----------------|---------|
+| φ            | `phi`          | Structural divergence |
+| Δφ           | `delta_phi`    | Rate divergence |
+| φ*           | `phi_star`     | Fusion of structure and rate |
+| ∇φ           | `drift`        | Directional bias |
+| κ            | `curvature`    | Symbolic bendiness |
+
+These layers operate over domains of symbolic functions and can be composed, visualized, and extended. Piancé provides the blueprint — Digamma Prime delivers the metrics.
+## 📚 Symbolic Audit Curriculum
+
+Digamma Prime is designed to teach symbolic reasoning through interpretable metrics.
+
+Each metric reinforces a core mathematical idea:
+
+- `phi(f, g)` → teaches absolute difference and function comparison  
+- `delta_phi(f, g)` → teaches derivative behavior and rate analysis  
+- `phi_star(f, g)` → teaches weighted composition and metric blending  
+- `drift(f, g)` → teaches directional bias and sign analysis  
+- `curvature(f)` → teaches second derivatives and geometric bendiness
+
+This curriculum is ideal for:
+- Students learning calculus and symbolic analysis  
+- AI systems learning to audit function behavior  
+- Researchers validating symbolic models
+
+Interactive notebooks and visual examples are available in the `notebooks/` folder.
+## 🔗 Piancé and Digamma Prime
+
+**Piancé** is the symbolic substrate — it defines the modular layers, semantic domains, and composition rules for function integrity.
+
+**Digamma Prime** is the applied framework — it exposes these layers as usable metrics (`phi`, `delta_phi`, etc.) via the `epe_maria` module.
+
+**Epe Maria** is the Python implementation — it delivers Digamma Prime as a reproducible, teachable, and extensible package.
+
+Together, they form a complete symbolic audit system:
+- Piancé → theory and architecture  
+- Digamma Prime → metrics and philosophy  
+- Epe Maria → code and execution
+
+
