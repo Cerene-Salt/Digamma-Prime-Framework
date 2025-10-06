@@ -34,3 +34,45 @@ See examples and explanations in docs/ep_documentacao
 #About
 Created by Cerene Rúbio
 License: MIT
+
+
+# 🔮 Digamma Prime — Symbolic Model Auditing Framework
+
+Digamma Prime is a symbolic framework for comparing machine learning models by their **behavior**, not just their outputs.
+
+It introduces interpretable metrics like:
+
+- **φ** — structural divergence  
+- **Δφ** — rate divergence  
+- **φ*** — fusion metric  
+- **drift** — directional bias  
+- **curvature** — shape sensitivity
+
+---
+
+## 🚀 Features
+
+- Symbolic comparison of models  
+- CLI for drift detection and audits  
+- Visual modules for φ and Δφ  
+- Tutorials and case studies  
+- Ready for CI/CD and dashboards
+
+---
+
+## 📚 Documentation
+
+See the full docs in the `docs/` folder or at [GitHub Pages link once published].
+
+---
+
+## 🧪 Quickstart
+
+```python
+from epe_maria import phi, delta_phi
+phi_val = phi(model_a.predict(X), model_b.predict(X))
+🤝 Contributing
+We welcome contributions in tutorials, metrics, automation, and visualizations. See docs/roadmap.md and docs/style_guide.md to get started.
+
+🧠 Vision
+Digamma Prime aims to become a universal symbolic standard for model auditing, drift detection, and interpretability.
