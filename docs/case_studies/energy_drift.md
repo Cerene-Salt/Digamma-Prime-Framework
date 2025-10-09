@@ -63,6 +63,6 @@ We compare predictions from both models on a transitional month using:
 
 ## ✅ Takeaway
 
-Digamma-Prime helps detect **regime shifts** in time-series models — before performance drops.  
+This Framework also helps detect **regime shifts** in time-series models — before performance drops.  
 It’s ideal for energy, climate, and infrastructure forecasting.
 
