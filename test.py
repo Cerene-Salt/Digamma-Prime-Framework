@@ -1,7 +1,8 @@
-from epe_maria import curvature
+from symbolic_temporal import simulate_temporal_drift, plot_temporal_phi
 from sympy import symbols
 
 x = symbols('x')
-f = x**2 + 3*x + 2
+base = x**2 + 1
 
-print("Average curvature:", curvature(f))
+drifted = simulate_temporal_drift(base, steps=6, drift_type='linear')
+plot_temporal_phi(drifted)

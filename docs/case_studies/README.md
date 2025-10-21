@@ -81,3 +81,53 @@ Includes:
 
 📖 Full documentation available in `docs/case_studies/predictive_maintenance_ai4i/README.md`
 
+Symbolic Audit: Predictive Maintenance (AI4I2020)
+Module: symbolic_pm_ai4i.py Dataset: ai4i2020.csv Location: docs/case_studies/predictive_maintenance_ai4i/
+
+🧠 Purpose
+This case study demonstrates symbolic auditing of sensor-derived failure models using the AI4I2020 dataset. It applies algebraic operators to quantify model similarity, smooth symbolic drift, and scaffold predictive structures.
+
+🔣 Operators Used
+𝓢[f] Scaffolding: structural comparison of symbolic models
+
+𝓜[f] Mollification: smoothing via polynomial truncation
+
+𝓚[f, g] Symbolic Kernel: cosine similarity between symbolic expressions
+
+📊 Results
+Symbolic Models:
+
+x² + mean(Process temperature)
+
+x² + x + std(Rotational speed)
+
+x³ + mean(Torque)
+
+Mollified Expressions (degree ≤ 3):
+
+1.0·x² + 310.00556
+
+1.0·x² + 1.0·x + 179.2841
+
+1.0·x³ + 39.98691
+
+Cosine Similarity Matrix:
+
+Código
+[1.0,    1.0,    0.9997]
+[1.0,    1.0,    0.9997]
+[0.9997, 0.9997, 1.0   ]
+✅ Interpretation
+High symbolic similarity between quadratic models
+
+Slight divergence from cubic torque-based model
+
+Mollification preserves structure while reducing drift sensitivity
+
+📁 Files
+symbolic_pm_ai4i.py: audit logic
+
+ai4i2020.csv: raw dataset
+
+symbolic_extensions.py: operator definitions
+

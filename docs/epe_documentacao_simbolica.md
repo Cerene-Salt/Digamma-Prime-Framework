@@ -1,62 +1,66 @@
-# Documentação Simbólica — Lady Epe
 
-## Introdução
-A Lady Epe é um sistema simbólico para auditoria de modelos, capaz de detectar divergência estrutural, curvatura e instabilidade funcional.
 
-## Métricas
+#Symbolic Documentation — Lady Epe
 
-| Símbolo | Nome técnico        | Interpretação simbólica |
-|--------|---------------------|--------------------------|
-| ϝ      | Variação estrutural | Diferença na forma geral da função |
-| δϝ     | Variação de taxa     | Diferença na velocidade de mudança |
-| δ²ϝ    | Variação de curvatura| Diferença na aceleração da mudança |
+## Introduction
+Lady Epe is a symbolic system for model auditing, capable of detecting structural divergence, curvature, and functional instability.
 
-## Aplicações
+## Metrics
 
-- 🔍 Curvatura: Detecta mudanças de forma mesmo com valores semelhantes
-- ⚖️ Justiça: Revela instabilidades que afetam fairness
-- 🧱 Estabilidade: Monitora consistência estrutural ao longo do tempo
-- 🎓 Ensino: Transforma álgebra funcional em linguagem visual
+| Symbol | Technical Name       | Symbolic Interpretation                     |
+|--------|----------------------|---------------------------------------------|
+| ϝ      | Structural Variation | Difference in the overall shape of the function |
+| δϝ     | Rate Variation       | Difference in the speed of change           |
+| δ²ϝ    | Curvature Variation  | Difference in the acceleration of change    |
 
-## Interpretação Pedagógica
+## Applications
 
-- ϝ → distância entre funções
-- δϝ → diferença entre velocidades
-- δ²ϝ → diferença entre acelerações
+-  Curvature: Detects shape changes even when values are similar  
+-  Fairness: Reveals instabilities that affect fairness  
+- Stability: Monitors structural consistency over time  
+-  Education: Translates functional algebra into visual language  
 
-## Exemplo Visual
+## Pedagogical Interpretation
 
-Funções: `f(x) = x`, `g(x) = x²`  
-ϝ é pequena, δ²ϝ é grande → g(x) acelera, f(x) não.
+- ϝ → distance between functions  
+- δϝ → difference in velocities  
+- δ²ϝ → difference in accelerations  
+
+## Visual Example
+
+Functions: `f(x) = x`, `g(x) = x²`  
+ϝ is small, δ²ϝ is large → g(x) accelerates, f(x) does not.
 
 ## Pipeline
 
-- `metrics.py`: define ϝ e δϝ
-- `temporal.py`: define δ²ϝ
-- `monitor.py`: aplica alertas
-- `benchmark.py`: compara com KS-test
-- `run_monitor.py`: roda auditoria com dados reais
-- `test_visual_benchmark.py`: gera gráficos comparativos
-
-# 🧠 Resumo Completo — Lady Epe
-
-## Introdução
-
-A Lady Epe é um sistema simbólico para auditoria de modelos, capaz de detectar mudanças estruturais, variações de taxa e curvatura em séries temporais. Ela vai além dos testes estatísticos clássicos, oferecendo uma abordagem funcional, visual e pedagógica.
+- `metrics.py`: defines ϝ and δϝ  
+- `temporal.py`: defines δ²ϝ  
+- `monitor.py`: applies alerts  
+- `benchmark.py`: compares with KS-test  
+- `run_monitor.py`: runs audit with real data  
+- `test_visual_benchmark.py`: generates comparative graphs  
 
 ---
 
-## 🔣 Métricas centrais
+#  Full Summary — Lady Epe
 
-| Símbolo | Nome técnico        | Significado |
-|--------|---------------------|-------------|
-| ϝ      | Variação estrutural | Diferença entre os valores das séries |
-| δϝ     | Variação de taxa     | Diferença entre as velocidades (1ª derivada) |
-| δ²ϝ    | Variação de curvatura| Diferença entre acelerações (2ª derivada) |
+## Introduction
+
+Lady Epe is a symbolic system for model auditing, capable of detecting structural changes, rate variations, and curvature in time series. It goes beyond classical statistical tests, offering a functional, visual, and pedagogical approach.
 
 ---
 
-## 📐 Fórmulas computacionais
+## Core Metrics
+
+| Symbol | Technical Name       | Meaning                                      |
+|--------|----------------------|----------------------------------------------|
+| ϝ      | Structural Variation | Difference between series values             |
+| δϝ     | Rate Variation       | Difference in velocities (1st derivative)    |
+| δ²ϝ    | Curvature Variation  | Difference in accelerations (2nd derivative) |
+
+---
+
+## Computational Formulas
 
 ```python
 def phi(f, g):
@@ -71,4 +75,4 @@ def second_order_divergence(f, g):
     d2f = np.diff(np.diff(f))
     d2g = np.diff(np.diff(g))
     return np.linalg.norm(d2f[:min(len(d2f), len(d2g))] - d2g[:min(len(d2f), len(d2g))])
-
+```
