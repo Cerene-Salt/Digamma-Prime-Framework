@@ -1,102 +1,72 @@
-# Digamma Prime (`digamma-ep`)
+#Digamma Prime (`digamma-ep`)
 
-Sistema simbólico para auditoria de modelos com métricas de divergência estrutural, temporal e algébrica.
-
+Sistema simbólico para auditoria de modelos com métricas de divergência estrutural, temporal e algébrica.  
 Symbolic audit framework for comparing models, tracking divergence, and teaching algebraic structure.
 
 ---
 
-## 📦 Instalação / Installation
-
-## Installation
+##  Installation
 
 ```bash
 pip install digamma_prime
 
-
-
-#Basic Usage
-
-from epe_maria import phi, delta_phi, phi_star
+#A Quickstart
+from epe_maria.metrics import phi, delta_phi, phi_star
 
 f = lambda x: x**2 + 2*x + 1
 g = lambda x: x**2 + x + 1
 
-print(phi(f, g))        # Divergência estrutural
-print(delta_phi(f, g))  # Divergência de taxa
-print(phi_star(f, g))   # Métrica de fusão
+print(phi(f, g))        # Structural divergence
+print(delta_phi(f, g))  # Rate divergence
+print(phi_star(f, g))   # Fusion metric
 
-#Tests
-
-pytest test_benchmark.py
-pytest test_monitor.py
 
 #Documentation
-See examples and explanations in docs/ep_documentacao
+Operator fichas: docs/operators.md
 
-#About
-Created by Cerene Rúbio
-License: MIT
+Symbolic manifesto: docs/epe_maria_manifesto.md
 
+#Examples in:
+python examples/symbolic_mollification_demo.py
+python examples/kernel_divergence_trace.py
 
-# 🔮 Digamma Prime — Symbolic Model Auditing Framework
+#Features
+Symbolic comparison of models
 
-Digamma Prime is a symbolic framework for comparing machine learning models by their **behavior**, not just their outputs.
+CLI-ready modules for drift detection
 
-It introduces interpretable metrics like:
+Visualizations for φ and Δφ
 
-- **φ** — structural divergence  
-- **Δφ** — rate divergence  
-- **φ*** — fusion metric  
-- **drift** — directional bias  
-- **curvature** — shape sensitivity
+Curriculum-ready structure
 
----
+PyPI + GitHub CI/CD integration
 
-## 🚀 Features
+Vision
+Digamma Prime aims to become a universal symbolic standard for model auditing, drift detection, and interpretability — rooted in the algebraic legacy of Epe Piancé Maria II.
 
-- Symbolic comparison of models  
-- CLI for drift detection and audits  
-- Visual modules for φ and Δφ  
-- Tutorials and case studies  
-- Ready for CI/CD and dashboards
-
----
-
-## 📚 Documentation
-
-See the full docs in the `docs/` folder or at [GitHub Pages link once published].
-
----
-
-## 🧪 Quickstart
-
-```python
-from epe_maria import phi, delta_phi
-phi_val = phi(model_a.predict(X), model_b.predict(X))
 🤝 Contributing
 We welcome contributions in tutorials, metrics, automation, and visualizations. See docs/roadmap.md and docs/style_guide.md to get started.
 
-🧠 Vision
-Digamma Prime aims to become a universal symbolic standard for model auditing, drift detection, and interpretability.
+Tests:;
+pytest test_benchmark.py
+pytest test_monitor.py
 
-![GitHub last commit](https://img.shields.io/github/last-commit/Cerene-Salt/Digamma-Prime-Framework)
-![GitHub tag](https://img.shields.io/github/v/tag/Cerene-Salt/Digamma-Prime-Framework)
-![License](https://img.shields.io/github/license/Cerene-Salt/Digamma-Prime-Framework)
+bout
+Created by Cerene Rúbio License: MIT Namespace: epe_maria/ — honoring the symbolic grammar of Epe Piancé Maria II
 
-![Python version](https://img.shields.io/badge/python-3.11+-blue)
-![Build status](https://img.shields.io/github/actions/workflow/status/Cerene-Salt/Digamma-Prime-Framework/test.yml)
+Release History
+v0.2.0 – Symbolic Expansion
+Added operator fichas and visual demos
 
-![PyPI](https://img.shields.io/pypi/v/digamma-ep)
-![Downloads](https://img.shields.io/pypi/dm/digamma-ep)
+Published examples/ and docs/ to PyPI
 
-## v0.1.7 – Initial PyPI Release
+Preserved epe_maria/ namespace
 
-- Published symbolic audit engine to PyPI
-- Includes `epe_maria` core modules: benchmark, metrics, monitor, visuals
-- Supports divergence detection, temporal drift, and structural analysis
-- Compatible with Python 3.11+
+Synced GitHub and PyPI
 
+v0.1.7 – Initial PyPI Release
+Core symbolic audit engine
 
+Modules: benchmark, metrics, monitor, visuals
 
-
+Python 3.11+ compatible
