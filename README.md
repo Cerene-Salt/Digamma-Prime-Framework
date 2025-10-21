@@ -8,8 +8,11 @@ Symbolic audit framework for comparing models, tracking divergence, and teaching
 
 ## 📦 Instalação / Installation
 
+## Installation
+
 ```bash
-pip install digamma-ep
+pip install digamma_prime
+
 
 
 #Basic Usage
