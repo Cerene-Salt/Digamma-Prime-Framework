@@ -84,4 +84,16 @@ Digamma Prime aims to become a universal symbolic standard for model auditing, d
 ![Python version](https://img.shields.io/badge/python-3.11+-blue)
 ![Build status](https://img.shields.io/github/actions/workflow/status/Cerene-Salt/Digamma-Prime-Framework/test.yml)
 
+![PyPI](https://img.shields.io/pypi/v/digamma-ep)
+![Downloads](https://img.shields.io/pypi/dm/digamma-ep)
+
+## v0.1.7 – Initial PyPI Release
+
+- Published symbolic audit engine to PyPI
+- Includes `epe_maria` core modules: benchmark, metrics, monitor, visuals
+- Supports divergence detection, temporal drift, and structural analysis
+- Compatible with Python 3.11+
+
+
+
 
