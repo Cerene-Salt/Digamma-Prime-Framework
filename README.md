@@ -76,3 +76,12 @@ We welcome contributions in tutorials, metrics, automation, and visualizations. 
 
 🧠 Vision
 Digamma Prime aims to become a universal symbolic standard for model auditing, drift detection, and interpretability.
+
+![GitHub last commit](https://img.shields.io/github/last-commit/Cerene-Salt/Digamma-Prime-Framework)
+![GitHub tag](https://img.shields.io/github/v/tag/Cerene-Salt/Digamma-Prime-Framework)
+![License](https://img.shields.io/github/license/Cerene-Salt/Digamma-Prime-Framework)
+
+![Python version](https://img.shields.io/badge/python-3.11+-blue)
+![Build status](https://img.shields.io/github/actions/workflow/status/Cerene-Salt/Digamma-Prime-Framework/test.yml)
+
+
