@@ -1,0 +1,5 @@
+setup.py
+epe_maria.egg-info/PKG-INFO
+epe_maria.egg-info/SOURCES.txt
+epe_maria.egg-info/dependency_links.txt
+epe_maria.egg-info/top_level.txt
