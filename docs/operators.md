@@ -87,4 +87,7 @@ Update `setup.py`:
 ```python
 version='0.2.0'
 
+include README.md
+include docs/*
+include examples/*
 
